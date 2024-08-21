@@ -1,0 +1,71 @@
+.top-navbar {
+    padding: 30px 32px;
+}
+
+/* 로그인 버튼  */
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.user-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.login-text {
+    margin-right: 10px;
+}
+
+/* 로고 */
+.Nav-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* 상단 네브바 */
+.menu-area {
+  position: relative;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center; 
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu-list li {
+  margin: 0 15px; 
+}
+
+.search-area {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.search-area input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-area input:focus {
+    outline: none;
+}
