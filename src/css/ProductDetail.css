@@ -1,0 +1,77 @@
+.product-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img img {
+     width: 100%;
+}
+
+.products-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-items > div {
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.Product-label {
+    font-size: 15px;
+}
+
+/* 드랍다운 메뉴 */
+.product-dropdown-menu  {
+    width: 150px;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-bottom: 20px;
+}
+
+.product-dropdown-menu:focus {
+    border-color: #686b68; 
+    outline: none; 
+} 
+
+/* 상품 추가 버튼 */
+.add-btn {
+    width: 400px;  
+    height: 40px;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    transition: all 0.1s ease-in-out;
+}
+
+.add-btn:active {
+    background-color: #111111c7;
+    transform: translateY(2px); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 768px) {
+    .product-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-btn {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

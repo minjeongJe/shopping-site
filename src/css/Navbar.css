@@ -1,21 +1,55 @@
 .top-navbar {
-    padding: 30px 32px;
+  padding: 30px 32px;
 }
 
-/* 로그인 버튼  */
-.login-button {
+/* 싱단 검색 & 로그인 버튼  */
+.search-login-area {
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+}
+
+.search-login-area input[type="text"]{
+  display: inline-block;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  height: 22px;
+}
+
+.search-login-area input:focus {
+  outline: none;
+}
+
+.search-login-area {
   display: flex;
   justify-content: flex-end;
   margin-right: 40px;
 }
 
 .user-icon {
-    margin-right: 10px;
-    font-size: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
 }
 
 .login-text {
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /* 로고 */
@@ -23,6 +57,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 /* 상단 네브바 */
@@ -33,39 +68,52 @@
 .menu-list {
   display: flex;
   justify-content: center; 
+  flex-wrap: wrap;
   list-style: none;
   padding: 10px;
   margin: 0;
+  cursor: pointer;
+}
+
+.menu-list li:hover {
+  transform: scale(1.05);
+  color: rgb(100, 98, 98);
 }
 
 .menu-list li {
   margin: 0 15px; 
 }
 
-.search-area {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: auto; 
-}
+@media (max-width: 768px) {
 
-.search-icon {
-  margin-right: 10px;
-  font-size: 18px;
-}
+  /* 검색 및 로그인영역 */
+  .search-login-area {
+    margin-bottom: 50px;
+  }
 
-.search-area input[type="text"] {
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  border-radius: 3px;
-}
+  .search-login-area input {
+    /* display: none; */
+    height: 20px;
+  }
 
-.search-area input:focus {
-    outline: none;
+  .search-icon{
+    margin-right: 30px;
+  }
+
+  .login-text {
+    display: none;
+  }
+
+  .search-login-area{
+    margin-right: 0;
+  }
+
+  /* 메뉴영역 */
+  .menu-list{
+    font-size: 15px;
+  }
+
+  .menu-list li {
+    padding: 8px 0;
+  }
 }
