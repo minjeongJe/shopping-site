@@ -3,6 +3,7 @@
   height: 100%;
   position: relative;
   display: inline-block; 
+  margin: 15px;
 }
 
 .Product-area img {
@@ -40,6 +41,12 @@
     color: red;
     font-size: 14px;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .Product-area {
+        width: 95%;
+    }
 }
 
 @media (max-width: 991px) {

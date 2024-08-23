@@ -7,15 +7,16 @@ const Login = ({setAuthenticate}) => {
   const Navigate = useNavigate()
   
   const loginUser = (event) => {
+    // 자동 새로고침 방지
     event.preventDefault();
     console.log("log");
-    setAuthenticate(true);
+    setAuthenticate(true); // 로그인 완료
     Navigate("/");
   };
 
   return (
     <div className='login-container'>
-      <h2>로그인</h2>
+          <h2>로그인</h2>
           <form className="login-form" onSubmit={(event) =>loginUser(event)}>
             <label>
               이메일 <span className="required">*</span>
